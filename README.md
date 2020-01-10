@@ -1,34 +1,34 @@
 # 蜗牛下载
+> 目的是为了下载墙外的文件提供方便
+
+- 支持文件下载
+- 支持Youtube视频下载
 
 ![screenshot](https://raw.githubusercontent.com/LyricTian/snail/master/static/img/screenshot.png)
 
-## 获取
-
-``` bash
-$ go get -u github.com/LyricTian/snail
-```
-
 ## 依赖工具
-
-### `bee`工具
-``` bash
-$ go get -u github.com/beego/bee
-```
-
-### `bower`工具
 
 ``` bash
 $ npm install -g bower
 ```
 
-## 安装依赖并运行
-> 配置参数(conf/app.conf)
+## 获取并运行
 
 ``` bash
-$ cd $GOPATH/src/github.com/LyricTian/snail
+$ go get -u github.com/LyricTian/snail
+$ cd github.com/LyricTian/snail
 $ bower install
-$ bee run
+$ go build -o snail
+$ ./snail
 ```
+
+在浏览器中打开[http://localhost:8099](http://localhost:8099)
+
+## TODO
+
+* 支持本地文件缓存
+* 增加用户登录限制
+* 支持下载历史查看
 
 ## MIT License
 
